@@ -1,17 +1,14 @@
 "use client";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    window.location.href = "/erm-report.html";
+  }, []);
+  
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0d1117] text-[#f0f6fc]">
-      <h1 className="text-3xl font-semibold mb-4">
-        Floating Prompt Box
-      </h1>
-      <p className="text-[#8b949e]">
-        Replace this file with your prototype code
-      </p>
-      <p className="text-[#484f58] text-sm mt-8">
-        Push changes to see them here automatically
-      </p>
+    <div className="min-h-screen flex items-center justify-center bg-[#f0f0f5]">
+      <p className="text-gray-500">Loading...</p>
     </div>
   );
 }
